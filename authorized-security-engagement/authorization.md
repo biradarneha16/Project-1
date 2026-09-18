@@ -1,45 +1,58 @@
 # Written Authorization & Scope
 
-## Engagement Statement
-This document authorizes security testing of an intentionally vulnerable **local training laboratory** only. Testing is permitted only against assets listed in the approved inventory and during the approved test window.
+## 1. Authorization Record
 
-| Field | Value |
+This document establishes the governance boundary for an authorized security assessment of an intentionally vulnerable local training lab.
+
+| Field | Approved Record |
 |---|---|
-| Engagement | Legal Scope, Asset Inventory & Threat Model |
-| Environment | Local isolated cybersecurity lab |
-| Asset owner | Lab owner / course instructor |
-| Security tester | Authorized student tester |
-| Authorization | Written lab authorization |
-| Test window | Scheduled lab sessions only |
-| Evidence owner | Security tester |
-| Escalation contact | Lab owner / course instructor |
+| Lab owner | RabTech lab |
+| Assessor | Student assessor |
+| Approved assets | LAB-01 and LAB-02 only |
+| Environment | Isolated localhost / private host-only network |
+| Approval date | ____________________ |
+| Approved window | Student-defined approved window |
+| Emergency contact | ____________________ |
+| Scope status | Pending owner/instructor sign-off |
 
-## In Scope
-- Vulnerable training web application
-- Training database
-- Test client
-- Local log/monitoring service
-- Authorized tester workstation
+**Authorization rule:** Never test a system that is absent from the approved asset inventory.
 
-## Out of Scope
-- Public Internet targets
-- College, employer, government, banking, healthcare, or other production systems
-- Third-party websites and APIs
-- Personal devices belonging to other people
-- Real customer or personally identifiable information
-- Production cloud accounts
-- Shared networks outside the isolated lab
-- Any IP, hostname, application, account, or data store not in the approved inventory
-- Uncontrolled denial-of-service testing
-- Persistence, destructive changes, malware deployment, or credential theft
+## 2. Approved Assets
 
-## Authorization Conditions
-1. Testing begins only after the lab owner approves this scope.
-2. New assets require explicit written approval.
-3. Use lab-only credentials.
-4. Collect minimum necessary evidence.
-5. Stop immediately if an out-of-scope system could be affected.
-6. Preserve the lab state and report unexpected impact.
+The canonical asset list is maintained in authorized-lab-assets.csv.
 
-## Scope Change
-Record the asset, owner, reason, new risk, approval date, and approver for every scope change.
+- **LAB-01:** Local training web app — http://127.0.0.1:8080
+- **LAB-02:** Deliberately vulnerable VM — 192.168.56.20
+
+Both assets are marked as testing-allowed in the supplied asset specification.
+
+## 3. Explicit Scope Exclusions
+
+The following are outside the authorization boundary:
+
+- Third-party targets or infrastructure.
+- Public Internet systems.
+- Any system not listed in the approved asset inventory.
+- Denial-of-service activity.
+- Destructive payloads.
+- Persistence mechanisms.
+- Credential reuse.
+- Uncontrolled data extraction.
+- Outbound traffic from the isolated lab.
+- Real personal, financial, institutional or production data.
+
+## 4. Authorization Conditions
+
+- Testing occurs only inside the approved lab environment.
+- The assessor uses only authorized lab identities and test data.
+- Any proposed scope change requires owner/instructor approval and an updated inventory.
+- Evidence is limited to the minimum required to support a finding.
+- Unexpected impact or scope uncertainty requires immediate cessation and escalation.
+
+## 5. Approval
+
+| Role | Name | Signature / Approval | Date |
+|---|---|---|---|
+| Lab Owner | ____________________ | ____________________ | __________ |
+| Assessor | ____________________ | ____________________ | __________ |
+| Instructor / Reviewer | ____________________ | ____________________ | __________ |
