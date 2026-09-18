@@ -1,0 +1,10 @@
+evidence_id,filename,type,description,source,sha256,status
+E-01,nmap-tcp-syn.nmap,Nmap output,TCP SYN scan output,Authorized sandbox,<HASH>,Pending
+E-02,nmap-tcp-syn.xml,Nmap XML,TCP SYN machine-readable output,Authorized sandbox,<HASH>,Pending
+E-03,nmap-udp-top100.nmap,Nmap output,UDP top-100 scan output,Authorized sandbox,<HASH>,Pending
+E-04,nmap-service-version.nmap,Nmap output,Service/version detection output,Authorized sandbox,<HASH>,Pending
+E-05,nmap-os.nmap,Nmap output,OS detection output,Authorized sandbox,<HASH>,Pending
+E-06,network-audit.pcapng,Packet capture,Original authorized Wireshark capture,Authorized lab,<HASH>,Pending
+E-07,wireshark-overview.png,Screenshot,Packet overview,Authorized lab,<HASH>,Pending
+E-08,wireshark-protocol-detail.png,Screenshot,Relevant protocol details,Authorized lab,<HASH>,Pending
+E-09,wireshark-plaintext-example-redacted.png,Screenshot,Redacted plaintext authentication evidence if observed,Authorized lab,<HASH>,Pending
