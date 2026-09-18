@@ -1,0 +1,5 @@
+Finding ID,Finding,OWASP/Area,CVSS 3.1,Priority,Remediation Status,Owner,Target Timeline
+VAPT-01,SQL Injection,A03 Injection,To calculate from confirmed evidence,To determine,Open,Developer,Assign after validation
+VAPT-02,Cross-Site Scripting,A03 Injection,To calculate from confirmed evidence,To determine,Open,Developer,Assign after validation
+VAPT-03,Broken Authentication,A07 Identification and Authentication Failures,To calculate from confirmed evidence,To determine,Open,Developer,Assign after validation
+VAPT-04,Unnecessary Network Exposure,Network Security / Hardening,To calculate from confirmed evidence,To determine,Open,Sysadmin,Assign after validation
