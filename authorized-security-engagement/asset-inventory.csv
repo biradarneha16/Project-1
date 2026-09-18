@@ -1,0 +1,8 @@
+asset_id,hostname,example_ip,asset_type,owner,purpose,data_class,trust_zone,authentication,attack_surface,criticality,authorized_testing
+LAB-WEB-01,lab-web,192.168.56.10,Vulnerable Web Application,Lab Owner,Intentionally vulnerable training target,Test,Application Zone,Lab test accounts,HTTP application endpoints and sessions,High,Yes
+LAB-DB-01,lab-db,192.168.56.20,Training Database,Lab Owner,Stores synthetic application data,Confidential-Test,Data Zone,Service account,Database service interface,High,Yes
+LAB-CLIENT-01,lab-client,192.168.56.30,Test Client,Lab Owner,Simulates authorized user activity,Test,Client Zone,Lab test account,Web browser and client services,Medium,Yes
+LAB-LOG-01,lab-log,192.168.56.40,Log Server,Lab Owner,Receives synthetic security events,Test,Monitoring Zone,Lab credentials,Log ingestion and review interface,Medium,Yes
+LAB-ATTACK-01,lab-attack,192.168.56.50,Authorized Tester Workstation,Security Tester,Performs controlled assessment activities,Test,Tester Zone,Tester account,Approved lab tools only,Medium,Yes
+
+NOTE: Example IP addresses are documentation placeholders. Replace them with actual isolated-lab addresses before operational testing.
